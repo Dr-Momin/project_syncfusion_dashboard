@@ -18,11 +18,14 @@ import {
 } from "./pages";
 import {FiSettings} from "react-icons/fi";
 import {Navbar, Sidebar} from "./components";
+import {useStateContext} from "./contexts/ContextProvider";
 
 
 const App = () => {
 
-    const activeMenu = true;
+    const {activeMenu, setActiveMenu} = useStateContext();
+
+    // const activeMenu = true;
 
   return (
       <div >

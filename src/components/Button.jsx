@@ -2,7 +2,14 @@ import React from 'react';
 
 function Button(props) {
     return (
-        <div></div>
+        <button
+            style={{
+                color: props.color,
+                backgroundColor: props.bgColor,
+                borderRadius: props.borderRadius
+            }}
+            className={"p-3 hover:drop-shadow-xl"}
+        >{props.text}</button>
     );
 }
 
